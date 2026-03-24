@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,29 +25,43 @@
       <header class="site-header">
         <a class="brand" href="#top" aria-label="Back to top">
           <span class="brand-mark">NMT</span>
-          <span class="brand-text">Interview Portfolio</span>
+          <span class="brand-text" data-i18n="brandText"> Portfolio</span>
         </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-        </nav>
+
+        <div class="header-tools">
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#about" data-i18n="navAbout">About</a>
+            <a href="#skills" data-i18n="navSkills">Skills</a>
+            <a href="#experience" data-i18n="navExperience">Experience</a>
+            <a href="#projects" data-i18n="navProjects">Projects</a>
+            <a href="#education" data-i18n="navEducation">Education</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
+          </nav>
+
+          <div class="language-switch" aria-label="Language switcher">
+            <button class="lang-button" type="button" data-lang-btn="vi">
+              VI
+            </button>
+            <button class="lang-button" type="button" data-lang-btn="en">
+              EN
+            </button>
+          </div>
+        </div>
       </header>
 
       <main>
         <section class="hero section" id="top">
           <div class="hero-copy reveal">
-            <p class="eyebrow">System Administrator / Networking Engineer</p>
+            <p class="eyebrow" data-i18n="heroEyebrow">
+              System Administrator / Networking Engineer
+            </p>
             <h1>Nguyen Minh Tri</h1>
-            <p class="hero-lead">
+            <p class="hero-lead" data-i18n="heroLead">
               Information Technology student at Vietnam Aviation Academy with a
               strong interest in networking, Linux systems, virtualization, and
               reliable service deployment.
             </p>
-            <p class="hero-summary">
+            <p class="hero-summary" data-i18n="heroSummary">
               I am looking for an opportunity to apply practical knowledge in
               TCP/IP, routing, switching, firewall configuration, and system
               administration. My long-term goal is to become a Network Engineer
@@ -55,32 +69,52 @@
             </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="#projects"
+              <a
+                class="button button-primary"
+                href="#projects"
+                data-i18n="heroBtnProjects"
                 >View Selected Projects</a
               >
               <a
                 class="button button-secondary"
                 href="assets/Nguyen-Minh-Tri-CV.pdf"
                 download
+                data-i18n="heroBtnCV"
                 >Download CV</a
               >
             </div>
 
             <div class="signal-grid">
               <article class="signal-card">
-                <span class="signal-label">Core track</span>
-                <strong>Networking + Systems</strong>
-                <p>TCP/IP, DNS, firewall, Linux, virtualization, troubleshooting.</p>
+                <span class="signal-label" data-i18n="signal1Label"
+                  >Core track</span
+                >
+                <strong data-i18n="signal1Title">Networking + Systems</strong>
+                <p data-i18n="signal1Desc">
+                  TCP/IP, DNS, firewall, Linux, virtualization, troubleshooting.
+                </p>
               </article>
               <article class="signal-card">
-                <span class="signal-label">Academic base</span>
-                <strong>Vietnam Aviation Academy</strong>
-                <p>Information Technology major, 2023 to present.</p>
+                <span class="signal-label" data-i18n="signal2Label"
+                  >Academic base</span
+                >
+                <strong data-i18n="signal2Title"
+                  >Vietnam Aviation Academy</strong
+                >
+                <p data-i18n="signal2Desc">
+                  Information Technology major, 2023 to present.
+                </p>
               </article>
               <article class="signal-card">
-                <span class="signal-label">Project coverage</span>
-                <strong>Backend to Infrastructure</strong>
-                <p>From REST APIs and SQL to server connectivity and deployment.</p>
+                <span class="signal-label" data-i18n="signal3Label"
+                  >Project coverage</span
+                >
+                <strong data-i18n="signal3Title"
+                  >Backend to Infrastructure</strong
+                >
+                <p data-i18n="signal3Desc">
+                  From REST APIs and SQL to server connectivity and deployment.
+                </p>
               </article>
             </div>
           </div>
@@ -88,16 +122,20 @@
           <aside class="profile-card reveal">
             <div class="portrait-wrap">
               <img
-                src="assets/portrait.png"
+                src="assets/potrait.png"
                 alt="Portrait of Nguyen Minh Tri"
                 class="portrait"
               />
             </div>
 
             <div class="profile-main">
-              <p class="profile-role">Ready for internship / junior roles</p>
-              <h2>System-minded and operations-focused</h2>
-              <p>
+              <p class="profile-role" data-i18n="profileRole">
+                Ready for internship / junior roles
+              </p>
+              <h2 data-i18n="profileHeading">
+                System-minded and operations-focused
+              </h2>
+              <p data-i18n="profileText">
                 I enjoy understanding how networks, systems, and applications
                 work together, then making them more stable, secure, and easier
                 to operate.
@@ -106,22 +144,24 @@
 
             <dl class="contact-list">
               <div>
-                <dt>Phone</dt>
+                <dt data-i18n="labelPhone">Phone</dt>
                 <dd><a href="tel:0903170514">0903 170 514</a></dd>
               </div>
               <div>
-                <dt>Email</dt>
+                <dt data-i18n="labelEmail">Email</dt>
                 <dd>
                   <a href="mailto:ntri97543@gmail.com">ntri97543@gmail.com</a>
                 </dd>
               </div>
               <div>
-                <dt>Location</dt>
-                <dd>Tan Phu District, Ho Chi Minh City</dd>
+                <dt data-i18n="labelLocation">Location</dt>
+                <dd data-i18n="locationValue">
+                  Tan Phu District, Ho Chi Minh City
+                </dd>
               </div>
               <div>
-                <dt>Date of birth</dt>
-                <dd>23 February 2005</dd>
+                <dt data-i18n="labelDob">Date of birth</dt>
+                <dd>23/02/2005</dd>
               </div>
             </dl>
 
@@ -140,38 +180,38 @@
 
         <section class="section reveal" id="about">
           <div class="section-heading">
-            <p class="eyebrow">About</p>
-            <h2>What I bring into the room</h2>
+            <p class="eyebrow" data-i18n="aboutEyebrow">About</p>
+            <h2 data-i18n="aboutHeading">What I bring into the room</h2>
           </div>
 
           <div class="focus-grid">
             <article class="focus-card">
-              <h3>Networking Foundation</h3>
-              <p>
+              <h3 data-i18n="focus1Title">Networking Foundation</h3>
+              <p data-i18n="focus1Desc">
                 Comfortable with HTTP/HTTPS, TCP/UDP, DNS, OSI, IP planning,
                 router setup, access points, and connectivity troubleshooting.
               </p>
             </article>
 
             <article class="focus-card">
-              <h3>System Administration</h3>
-              <p>
+              <h3 data-i18n="focus2Title">System Administration</h3>
+              <p data-i18n="focus2Desc">
                 Interested in real-world system operations, monitoring, incident
                 response, Linux environments, and deployment stability.
               </p>
             </article>
 
             <article class="focus-card">
-              <h3>Virtualization & Containers</h3>
-              <p>
+              <h3 data-i18n="focus3Title">Virtualization & Containers</h3>
+              <p data-i18n="focus3Desc">
                 Hands-on work with VirtualBox, VMware, Docker, and Linux
                 Containers, plus exposure to Proxmox VE cluster operations.
               </p>
             </article>
 
             <article class="focus-card">
-              <h3>Product Awareness</h3>
-              <p>
+              <h3 data-i18n="focus4Title">Product Awareness</h3>
+              <p data-i18n="focus4Desc">
                 Frontend and backend project work helps me understand how
                 infrastructure choices affect real application performance and
                 user experience.
@@ -182,38 +222,54 @@
 
         <section class="section reveal" id="skills">
           <div class="section-heading">
-            <p class="eyebrow">Skills</p>
-            <h2>Technical toolkit</h2>
+            <p class="eyebrow" data-i18n="skillsEyebrow">Skills</p>
+            <h2 data-i18n="skillsHeading">Technical toolkit</h2>
           </div>
 
           <div class="skill-groups">
             <article class="skill-panel">
-              <h3>Networking</h3>
+              <h3 data-i18n="skillNetworkTitle">Networking</h3>
               <ul>
-                <li>TCP/IP, HTTP/HTTPS, TCP/UDP, DNS</li>
-                <li>OSI model, IP addressing, routing basics</li>
-                <li>Firewall, router, proxy, VPN</li>
-                <li>Wi-Fi security and connectivity troubleshooting</li>
+                <li data-i18n="skillNetworkItem1">
+                  TCP/IP, HTTP/HTTPS, TCP/UDP, DNS
+                </li>
+                <li data-i18n="skillNetworkItem2">
+                  OSI model, IP addressing, routing basics
+                </li>
+                <li data-i18n="skillNetworkItem3">
+                  Firewall, router, proxy, VPN
+                </li>
+                <li data-i18n="skillNetworkItem4">
+                  Wi-Fi security and connectivity troubleshooting
+                </li>
               </ul>
             </article>
 
             <article class="skill-panel">
-              <h3>Systems & Infrastructure</h3>
+              <h3 data-i18n="skillSystemTitle">Systems & Infrastructure</h3>
               <ul>
-                <li>Linux, Docker, VirtualBox, VMware</li>
-                <li>Linux Containers (LXC)</li>
-                <li>Server environment setup and deployment support</li>
-                <li>Monitoring mindset and operational reporting</li>
+                <li data-i18n="skillSystemItem1">
+                  Linux, Docker, VirtualBox, VMware
+                </li>
+                <li data-i18n="skillSystemItem2">Linux Containers (LXC)</li>
+                <li data-i18n="skillSystemItem3">
+                  Server environment setup and deployment support
+                </li>
+                <li data-i18n="skillSystemItem4">
+                  Monitoring mindset and operational reporting
+                </li>
               </ul>
             </article>
 
             <article class="skill-panel">
-              <h3>Development</h3>
+              <h3 data-i18n="skillDevTitle">Development</h3>
               <ul>
-                <li>HTML, CSS, React.js</li>
-                <li>Node.js with Express</li>
-                <li>SQL and RESTful API design</li>
-                <li>Frontend and backend collaboration</li>
+                <li data-i18n="skillDevItem1">HTML, CSS, React.js</li>
+                <li data-i18n="skillDevItem2">Node.js with Express</li>
+                <li data-i18n="skillDevItem3">SQL and RESTful API design</li>
+                <li data-i18n="skillDevItem4">
+                  Frontend and backend collaboration
+                </li>
               </ul>
             </article>
           </div>
@@ -221,8 +277,8 @@
 
         <section class="section reveal" id="experience">
           <div class="section-heading">
-            <p class="eyebrow">Experience</p>
-            <h2>Operational experience and hands-on practice</h2>
+            <p class="eyebrow" data-i18n="experienceEyebrow">Experience</p>
+            <h2 data-i18n="experienceHeading">Relevant work experience</h2>
           </div>
 
           <div class="timeline">
@@ -232,48 +288,24 @@
                 <span>Saigon Chess</span>
               </div>
               <div class="timeline-body">
-                <h3>CCTV Monitoring Collaborator</h3>
-                <p>
+                <h3 data-i18n="exp1Title">CCTV Monitoring Collaborator</h3>
+                <p data-i18n="exp1Desc">
                   Supported facility safety by monitoring surveillance systems
                   and reporting incidents with consistency and attention to
                   detail.
                 </p>
                 <ul>
-                  <li>Monitored CCTV cameras to maintain security awareness.</li>
-                  <li>Observed and reported suspicious activity when needed.</li>
-                  <li>Reviewed recorded footage during incident follow-up.</li>
-                  <li>Checked surveillance equipment and maintained logs.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-meta">
-                <span>2025 - 2026</span>
-                <span>Infrastructure Operations Practice</span>
-              </div>
-              <div class="timeline-body">
-                <h3>Proxmox VE, LXC, and Virtual Machine Administration</h3>
-                <p>
-                  Built practical exposure to infrastructure operations through
-                  container and virtual machine administration work.
-                </p>
-                <ul>
-                  <li>
-                    Took over and operated an existing Proxmox VE cluster during
-                    a short IT handover.
+                  <li data-i18n="exp1Item1">
+                    Monitored CCTV cameras to maintain security awareness.
                   </li>
-                  <li>
-                    Administered Linux Containers to support internal systems
-                    and customer projects.
+                  <li data-i18n="exp1Item2">
+                    Observed and reported suspicious activity when needed.
                   </li>
-                  <li>
-                    Helped keep services stable during provisioning and
-                    migration.
+                  <li data-i18n="exp1Item3">
+                    Reviewed recorded footage during incident follow-up.
                   </li>
-                  <li>
-                    Designed, deployed, and managed virtual machines with
-                    VMware for development and testing needs.
+                  <li data-i18n="exp1Item4">
+                    Checked surveillance equipment and maintained logs.
                   </li>
                 </ul>
               </div>
@@ -283,25 +315,36 @@
 
         <section class="section reveal" id="projects">
           <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2>Selected work from networking, backend, and product delivery</h2>
+            <p class="eyebrow" data-i18n="projectsEyebrow">Projects</p>
+            <h2 data-i18n="projectsHeading">
+              Selected work across networking, infrastructure, backend, and
+              product delivery
+            </h2>
           </div>
 
           <div class="project-grid">
             <article class="project-card">
               <div class="project-head">
-                <p class="project-role">Networking Lab</p>
+                <p class="project-role" data-i18n="proj1Role">Networking Lab</p>
                 <span>Jan 2024 - Feb 2024</span>
               </div>
-              <h3>Configuring Router and Access Point Network</h3>
-              <p>
+              <h3 data-i18n="proj1Title">
+                Configuring Router and Access Point Network
+              </h3>
+              <p data-i18n="proj1Desc">
                 Implemented a small network model to provide internet access for
                 multiple devices in a lab environment.
               </p>
               <ul>
-                <li>Configured IP addressing, DHCP, and Wi-Fi security.</li>
-                <li>Integrated router and access point components.</li>
-                <li>Tested connectivity and troubleshooted network issues.</li>
+                <li data-i18n="proj1Item1">
+                  Configured IP addressing, DHCP, and Wi-Fi security.
+                </li>
+                <li data-i18n="proj1Item2">
+                  Integrated router and access point components.
+                </li>
+                <li data-i18n="proj1Item3">
+                  Tested connectivity and troubleshooted network issues.
+                </li>
               </ul>
               <div class="project-tags">
                 <span>Router</span>
@@ -313,19 +356,66 @@
 
             <article class="project-card">
               <div class="project-head">
-                <p class="project-role">Backend</p>
+                <p class="project-role" data-i18n="projInfraRole">
+                  Infrastructure / System Administration
+                </p>
+                <span>2025 - 2026</span>
+              </div>
+              <h3 data-i18n="projInfraTitle">
+                Proxmox VE, LXC, and Virtual Machine Administration
+              </h3>
+              <p data-i18n="projInfraDesc">
+                Built practical exposure to infrastructure operations through
+                container and virtual machine administration work.
+              </p>
+              <ul>
+                <li data-i18n="projInfraItem1">
+                  Took over and operated an existing Proxmox VE cluster during a
+                  short IT handover.
+                </li>
+                <li data-i18n="projInfraItem2">
+                  Administered Linux Containers to support internal systems and
+                  customer projects.
+                </li>
+                <li data-i18n="projInfraItem3">
+                  Helped keep services stable during provisioning and migration.
+                </li>
+                <li data-i18n="projInfraItem4">
+                  Designed, deployed, and managed virtual machines with VMware
+                  for development and testing needs.
+                </li>
+              </ul>
+              <div class="project-tags">
+                <span>Proxmox VE</span>
+                <span>LXC</span>
+                <span>VMware</span>
+                <span>Infrastructure Ops</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-head">
+                <p class="project-role" data-i18n="proj2Role">Backend</p>
                 <span>Oct 2025 - Dec 2025</span>
               </div>
-              <h3>Expense Management System</h3>
-              <p>
+              <h3 data-i18n="proj2Title">Expense Management System</h3>
+              <p data-i18n="proj2Desc">
                 Built backend services to manage income and expense data with a
                 focus on API design, data integrity, and deployment support.
               </p>
               <ul>
-                <li>Developed RESTful APIs for expense tracking and reports.</li>
-                <li>Improved backend security, structure, and scalability.</li>
-                <li>Configured IP connectivity between servers for deployment.</li>
-                <li>Set up the server environment for stable application access.</li>
+                <li data-i18n="proj2Item1">
+                  Developed RESTful APIs for expense tracking and reports.
+                </li>
+                <li data-i18n="proj2Item2">
+                  Improved backend security, structure, and scalability.
+                </li>
+                <li data-i18n="proj2Item3">
+                  Configured IP connectivity between servers for deployment.
+                </li>
+                <li data-i18n="proj2Item4">
+                  Set up the server environment for stable application access.
+                </li>
               </ul>
               <div class="project-tags">
                 <span>Node.js</span>
@@ -338,25 +428,36 @@
                 href="https://github.com/MinhAnh248/LTM_FINALQ.git"
                 target="_blank"
                 rel="noreferrer"
+                data-i18n="repoLabel"
                 >Repository</a
               >
             </article>
 
             <article class="project-card">
               <div class="project-head">
-                <p class="project-role">Frontend / UI-UX</p>
+                <p class="project-role" data-i18n="proj3Role">
+                  Frontend / UI-UX
+                </p>
                 <span>Nov 2025 - Jan 2026</span>
               </div>
-              <h3>JobConect4Student</h3>
-              <p>
+              <h3 data-i18n="proj3Title">JobConect4Student</h3>
+              <p data-i18n="proj3Desc">
                 Contributed to design and frontend improvement work, with a
                 strong focus on dashboard usability and product consistency.
               </p>
               <ul>
-                <li>Designed wireframes and high-fidelity Figma prototypes.</li>
-                <li>Improved admin dashboard UI/UX and evaluated usability.</li>
-                <li>Added product features based on feedback and requirements.</li>
-                <li>Collaborated on consistent user experience across the system.</li>
+                <li data-i18n="proj3Item1">
+                  Designed wireframes and high-fidelity Figma prototypes.
+                </li>
+                <li data-i18n="proj3Item2">
+                  Improved admin dashboard UI/UX and evaluated usability.
+                </li>
+                <li data-i18n="proj3Item3">
+                  Added product features based on feedback and requirements.
+                </li>
+                <li data-i18n="proj3Item4">
+                  Collaborated on consistent user experience across the system.
+                </li>
               </ul>
               <div class="project-tags">
                 <span>Figma</span>
@@ -369,25 +470,36 @@
                 href="https://github.com/PhucLe186/JobConect4Student.git"
                 target="_blank"
                 rel="noreferrer"
+                data-i18n="repoLabel"
                 >Repository</a
               >
             </article>
 
             <article class="project-card">
               <div class="project-head">
-                <p class="project-role">Frontend / Backend</p>
+                <p class="project-role" data-i18n="proj4Role">
+                  Frontend / Backend
+                </p>
                 <span>20 Mar 2025 - 22 Mar 2025</span>
               </div>
-              <h3>MealMatch</h3>
-              <p>
+              <h3 data-i18n="proj4Title">MealMatch</h3>
+              <p data-i18n="proj4Desc">
                 Designed and developed both frontend and backend flows for a
                 recommendation product that matches meals to user constraints.
               </p>
               <ul>
-                <li>Built responsive UI for budget, preference, and group input.</li>
-                <li>Developed RESTful APIs for recommendation processing.</li>
-                <li>Implemented scoring logic and preference extraction.</li>
-                <li>Integrated explainable recommendations and Google Maps flow.</li>
+                <li data-i18n="proj4Item1">
+                  Built responsive UI for budget, preference, and group input.
+                </li>
+                <li data-i18n="proj4Item2">
+                  Developed RESTful APIs for recommendation processing.
+                </li>
+                <li data-i18n="proj4Item3">
+                  Implemented scoring logic and preference extraction.
+                </li>
+                <li data-i18n="proj4Item4">
+                  Integrated explainable recommendations and Google Maps flow.
+                </li>
               </ul>
               <div class="project-tags">
                 <span>Full Stack</span>
@@ -400,6 +512,7 @@
                 href="https://github.com/Henry2321/BudgetBite-AI.git"
                 target="_blank"
                 rel="noreferrer"
+                data-i18n="repoLabel"
                 >Repository</a
               >
             </article>
@@ -408,39 +521,42 @@
 
         <section class="section reveal" id="education">
           <div class="section-heading">
-            <p class="eyebrow">Education & Certifications</p>
-            <h2>Academic path and supporting credentials</h2>
+            <p class="eyebrow" data-i18n="educationEyebrow">
+              Education & Certifications
+            </p>
+            <h2 data-i18n="educationHeading">
+              Academic path and supporting credentials
+            </h2>
           </div>
 
           <div class="duo-grid">
             <article class="info-panel">
-              <h3>Education</h3>
+              <h3 data-i18n="eduTitle">Education</h3>
               <div class="info-entry">
                 <div>
-                  <strong>Vietnam Aviation Academy</strong>
-                  <p>Major: Information Technology (IT)</p>
+                  <strong data-i18n="eduSchool"
+                    >Vietnam Aviation Academy</strong
+                  >
+                  <p data-i18n="eduMajor">Major: Information Technology (IT)</p>
                 </div>
                 <span>2023 - Present</span>
               </div>
-              <p class="panel-note">
+              <p class="panel-note" data-i18n="eduNote">
                 Building a foundation in networking, systems, and practical IT
                 operations while contributing to project-based product work.
               </p>
             </article>
 
             <article class="info-panel">
-              <h3>Certifications</h3>
+              <h3 data-i18n="certTitle">Certifications</h3>
               <div class="cert-list">
                 <div class="cert-item">
                   <strong>IELTS</strong>
                   <span>2025</span>
                 </div>
+
                 <div class="cert-item">
-                  <strong>Linux Container (LXC) Administration</strong>
-                  <span>20 Oct 2025 - 25 Oct 2025</span>
-                </div>
-                <div class="cert-item">
-                  <strong>Gemini Certified</strong>
+                  <strong data-i18n="cert3Name">Gemini Certified</strong>
                   <span>2026</span>
                 </div>
               </div>
@@ -450,33 +566,41 @@
 
         <section class="section contact-section reveal" id="contact">
           <div class="section-heading">
-            <p class="eyebrow">Contact</p>
-            <h2>Open to opportunities in systems and networking</h2>
+            <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+            <h2 data-i18n="contactHeading">
+              Open to opportunities in systems and networking
+            </h2>
           </div>
 
           <div class="contact-panel">
             <div>
-              <p class="contact-intro">
+              <p class="contact-intro" data-i18n="contactIntro">
                 If you are looking for a motivated junior candidate who is eager
                 to learn fast, work carefully, and grow in real infrastructure
                 environments, I would be glad to discuss how I can contribute.
               </p>
               <div class="contact-actions">
-                <a class="button button-primary" href="mailto:ntri97543@gmail.com"
+                <a
+                  class="button button-primary"
+                  href="mailto:ntri97543@gmail.com"
+                  data-i18n="contactBtnEmail"
                   >Email Me</a
                 >
-                <a class="button button-secondary" href="tel:0903170514"
+                <a
+                  class="button button-secondary"
+                  href="tel:0903170514"
+                  data-i18n="contactBtnCall"
                   >Call Me</a
                 >
               </div>
             </div>
 
             <div class="contact-side">
-              <p><strong>Interests</strong></p>
+              <p><strong data-i18n="interestsTitle">Interests</strong></p>
               <ul>
-                <li>Exploring new technologies</li>
-                <li>Reading books</li>
-                <li>Listening to music</li>
+                <li data-i18n="interest1">Exploring new technologies</li>
+                <li data-i18n="interest2">Reading books</li>
+                <li data-i18n="interest3">Listening to music</li>
               </ul>
             </div>
           </div>
@@ -484,7 +608,10 @@
       </main>
 
       <footer class="site-footer">
-        <p>Built for interview use on <span id="today-date"></span>.</p>
+        <p>
+          <span data-i18n="footerLabel">Built for interview use on</span>
+          <span id="today-date"></span>.
+        </p>
       </footer>
     </div>
   </body>
